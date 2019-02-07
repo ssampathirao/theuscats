@@ -19,16 +19,10 @@
 
 <ion-content>
     <ion-card class="welcome-card">
-   <ion-slides>
-    <ion-slide >
-      <ion-img src="../../assets/Sankranthi4.jpg"></ion-img>
-    </ion-slide>
-    <ion-slide >
-      <ion-img src="../../assets/CATSDasara2017.jpeg"></ion-img>
-    </ion-slide>
-    <ion-slide >
-      <ion-img src="../../assets/CATS_DCcentral.jpg"></ion-img>
-    </ion-slide>
+   <ion-slides pager="true" [options]="slideOptsHome" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderHome,slideWithNav)">
+          <ion-slide *ngFor="let s of sliderHome.slidesItems">
+            <ion-img src="../../assets/images/{{s.image}}"></ion-img>
+          </ion-slide>
   </ion-slides>
     </ion-card>
 
