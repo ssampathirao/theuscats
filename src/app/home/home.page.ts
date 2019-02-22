@@ -1,4 +1,4 @@
-import { Component, ViewChild} from '@angular/core';
+import { Component, ViewChild, Slides} from '@angular/core';
 //import { Slides } from '@ionic/angular';
 
 @Component({
@@ -14,12 +14,33 @@ export class HomePage
 
 
 sliderHome: any;
+sliderGold: any;
+sliderSilver: any;
+sliderBronze: any;
 
 slideOptsHome = {
     initialSlide: 0,
     slidesPerView: 1,
     autoplay:true
   };
+  
+slideOptsGold = {
+    initialSlide: 0,
+    slidesPerView: 7,
+    autoplay:true
+  }; 
+
+slideOptsSilver = {
+    initialSlide: 0,
+    slidesPerView: 7,
+    autoplay:true
+  };
+  
+slideOptsBronze = {
+    initialSlide: 0,
+    slidesPerView: 7,
+    autoplay:true
+  };   
 
 constructor() {
 
@@ -40,6 +61,111 @@ constructor() {
             id: 3,
             image: '../../assets/CATS_DCcentral.jpg'
           }
+        ]
+      };
+	  
+    this.sliderSilver =
+      {
+        isBeginningSlide: true,
+        isEndSlide: false,
+        slidesItems: [
+          {
+            id: 1,
+            image: '../../assets/img/silver/image1.jpg'
+          },
+          {
+            id: 2,
+            image: '../../assets/img/silver/image2.png'
+          },
+          {
+            id: 3,
+            image: '../../assets/img/silver/image3.JPG'
+          },
+          {
+            id: 4,
+            image: '../../assets/img/silver/image4.jpg'
+          }		  
+        ]
+      };
+
+
+    this.sliderBronze =
+      {
+        isBeginningSlide: true,
+        isEndSlide: false,
+        slidesItems: [
+          {
+            id: 1,
+            image: '../../assets/img/bronze/image1.png'
+          },
+          {
+            id: 2,
+            image: '../../assets/img/bronze/image2.jpg'
+          },
+          {
+            id: 3,
+            image: '../../assets/img/bronze/image3.jpg'
+          },
+          {
+            id: 4,
+            image: '../../assets/img/bronze/image4.jpg'
+          },		  
+          {
+            id: 5,
+            image: '../../assets/img/bronze/image5.jpg'
+          }
+        ]
+      };	  
+
+    this.sliderGold =
+      {
+        isBeginningSlide: true,
+        isEndSlide: false,
+        slidesItems: [
+          {
+            id: 1,
+            image: '../../assets/img/gold/image1.jpg'
+          },
+          {
+            id: 2,
+            image: '../../assets/img/gold/image2.jpg'
+          },
+          {
+            id: 3,
+            image: '../../assets/img/gold/image3.jpg'
+          },
+          {
+            id: 4,
+            image: '../../assets/img/gold/image4.jpg'
+          },
+          {
+            id: 5,
+            image: '../../assets/img/gold/image5.jpg'
+          },
+          {
+            id: 6,
+            image: '../../assets/img/gold/image6.png'
+          },	
+          {
+            id: 7,
+            image: '../../assets/img/gold/image7.jpg'
+          },
+          {
+            id: 8,
+            image: '../../assets/img/gold/image8.jpg'
+          },
+          {
+            id: 9,
+            image: '../../assets/img/gold/image9.png'
+          },
+          {
+            id: 10,
+            image: '../../assets/img/gold/image10.jpg'
+          },
+          {
+            id: 11,
+            image: '../../assets/img/gold/image11.jpg'
+          }		  
         ]
       };
 	

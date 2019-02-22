@@ -36,26 +36,6 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'Become a Member',
-      url: '/member',
-      icon: 'list'
-    },
-    {
-      title: 'Become a Sponsor',
-      url: '/sponsor',
-      icon: 'list'
-    },
-    {
-      title: 'Pay Sponsoship Online',
-      url: '/paysponsor',
-      icon: 'list'
-    },
-    {
-      title: 'Pay Membership Online',
-      url: '/paymember',
-      icon: 'list'
-    },
-    {
       title: 'Cremation HelpLine',
       url: '/cremhelpline',
       icon: 'list'

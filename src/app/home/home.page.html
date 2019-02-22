@@ -1,146 +1,169 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color='warning'>
+  
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-grid>
-	<ion-row>
-		<ion-col>
-    <ion-img src="assets/catslogo.png" class="homelogo"></ion-img>
-	</ion-col>
-	<ion-col>
-      <ion-label>Capitol Area Telugu Socienty</ion-label>
-	</ion-col>
-</ion-row>
+	
+    <ion-grid class="homeheader">
+		<ion-row>
+			<ion-col align-self-start>
+				<ion-img src="assets/catslogo.png" class="homelogo"></ion-img>
+			</ion-col>
+ 			<ion-col align-self-center>
+				<ion-img src="assets/title.png" class="hometitle"></ion-img>
+			</ion-col>
+			<ion-col align-self-start>
+
+			</ion-col>
+			
+		</ion-row>
     </ion-grid>
+	
   </ion-toolbar>
 
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen background-color="warning">
+
     <ion-card class="welcome-card">
-   <ion-slides pager="true" [options]="slideOptsHome" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderHome,slideWithNav)">
-          <ion-slide *ngFor="let s of sliderHome.slidesItems">
-            <ion-img src="../../assets/images/{{s.image}}"></ion-img>
-          </ion-slide>
-  </ion-slides>
+	    <ion-slides pager="true" [options]="slideOptsHome" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderHome,slideWithNav)">
+			<ion-slide *ngFor="let s of sliderHome.slidesItems">
+				<ion-img src="../../assets/images/{{s.image}}"></ion-img>
+			</ion-slide>
+	    </ion-slides>
     </ion-card>
 
-    <ion-card>
-	<br/>
-	<br/>
-	Event Anouncements
-	<br/>
-	<br/>
+	<ion-card class="manabadi">
+		<a href="http://manabadi.siliconandhra.org/"><ion-img src="../../assets/siliconandhra-manabadi-logo-2.png"></ion-img></a>
+	</ion-card>
+	<font color="red">
+	<marquee color="dark" behavior="scroll" direction="left"><b>Mark your calendar for Upcoming event from CATS - Ugadi 2019 Celebrations!!!</b></marquee>	
+	</font>
+    <ion-card class="event-card">
+
+		  <div padding class="event-info">
+			<h4><b>CATS Ugadi Sambaralu 2019</b></h4>
+			<ion-img src="../../assets/ugadi2019.jpg"></ion-img>
+<!-- 			<ion-grid>
+				<ion-row>
+					<ion-col>
+						<ion-list lines="none">
+						  <ion-item>
+							<ion-icon name="calendar" slot="start"></ion-icon>
+							<ion-label>Date</ion-label>
+							<ion-label>Mar 30. 2019</ion-label>
+						  </ion-item>
+						  <ion-item>
+							<ion-icon name="pin" slot="start"></ion-icon>
+							<ion-label>Location</ion-label>
+							<ion-label>Stone bridge High School, Ashburn, VA</ion-label>
+						  </ion-item>
+						</ion-list>					
+					</ion-col>
+					<ion-col>
+						
+					</ion-col>					
+				</ion-row>
+			</ion-grid> -->
+
+
+
+			<p>
+
+			</p>
+		  </div>
     </ion-card>
 
-
-    <ion-card>
+<!--    <ion-card class="btn-card">
 	<br/>
 	<br/>
+ 		<ion-grid>
+			<ion-row>
+				<ion-col align-self-start>
+				</ion-col>			
+				<ion-col align-self-center>
+					<a class="roundbutton" href="https://squareup.com/store/theuscats">Sponsor</a>
+				</ion-col>
+				<ion-col align-self-center>
+					<a class="roundbutton" href="https://squareup.com/store/theuscats">Member</a>
+				</ion-col>
+				<ion-col align-self-center>
+					<a class="roundbutton" href="https://squareup.com/store/theuscats">Mana Badi</a>
+				</ion-col>
+				<ion-col align-self-end>
+				</ion-col>				
+			</ion-row>
+		</ion-grid> -->
 
- <ion-row align-items-start>
+<!--  <ion-row align-items-start>
  
 
-    <ion-col>
-		<div class="round-button"><div class="round-button-circle"><a href="https://squareup.com/store/theuscats" class="round-button">Sponsor</a></div></div>
+    <ion-col slot="start">
+		<a class="roundbutton" href="https://squareup.com/store/theuscats">Sponsor<i class="ion-ios-arrow-down"></i></a>
+ 		<div class="round-button"><div class="round-button-circle"><a href="https://squareup.com/store/theuscats" class="round-button">Sponsor</a></div></div>
     </ion-col>
-    <ion-col>
-		<div class="round-button"><div class="round-button-circle"><a href="https://squareup.com/store/theuscats" class="round-button">Be A Member</a></div></div>
+    <ion-col slot="fixed">
+		<a class="roundbutton" href="https://squareup.com/store/theuscats">Be A Member<i class="ion-ios-arrow-down"></i></a>
+ 		<div class="round-button"><div class="round-button-circle"><a href="https://squareup.com/store/theuscats" class="round-button">Be A Member</a></div></div>
     </ion-col>
-<!-- 	<ion-col>
-		<div class="round-button"><div class="round-button-circle"><a href="https://squareup.com/store/theuscats" class="round-button"><img src="../../assets/Manabadi_LogoNew.jpg"></img></a></div></div>
-    </ion-col> -->
-</ion-row>
+ 	<ion-col slot="end">
+		<a class="roundbutton" href="https://squareup.com/store/theuscats">Manabadi<i class="ion-ios-arrow-down"></i></a>
+ 		<div class="round-button"><div class="round-button-circle"><a href="https://squareup.com/store/theuscats" class="round-button"><img src="../../assets/Manabadi_LogoNew.jpg"></img></a></div></div>
+    </ion-col> 
+</ion-row> 
 
 	<br/>
 	<br/>
-</ion-card>
+</ion-card>-->
+
 
     <ion-list lines="none">
       <ion-list-header>
-	  <ion-button> 
-        <ion-label>Gold Sponsors</ion-label>
-	  </ion-button> 
+		  <ion-button shape="round" color="warning"> 
+			<ion-label><b>Gold Sponsors</b></ion-label>
+		  </ion-button> 
       </ion-list-header>
-	
 
-<ion-card>
-<ion-grid>
-  <ion-row align-items-start>
-    <ion-col>
-      <ion-img src="../../assets/ahl_logo2.png"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/AlluriRealty.jpg"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/Aparajitha.jpg"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/bestBrains.jpg"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/countryOvenLogo.png"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/estateHome.png"></ion-img>
-    </ion-col>
-  </ion-row>
-  <ion-row align-items-start>
-    <ion-col>
-      <ion-img src="../../assets/halo.png"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/issi.jpg"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/jakkampudi1.jpg"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/janetha.png"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/logoNTech.jpg"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/paradigm.jpg"></ion-img>
-    </ion-col>
-  </ion-row>
-  <ion-row align-items-start>
-    <ion-col>
-      <ion-img src="../../assets/Pilupu.jpg"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/samatvaLogo.jpg"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/SCIlogo.png"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/somiReddy.JPG"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/tatva.jpg"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/tristar.jpg"></ion-img>
-    </ion-col>
-  </ion-row>
-  <ion-row align-items-start>
-    <ion-col>
-      <ion-img src="../../assets/tv5.png"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/Yuvika.jpg"></ion-img>
-    </ion-col>
-    <ion-col>
-      <ion-img src="../../assets/zindagi1.jpg"></ion-img>
-    </ion-col>
-  </ion-row>
-
-</ion-grid>
-
- </ion-card>
+		<ion-card class="sponsor-card">
+		   <ion-slides pager="true" [options]="slideOptsGold" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderGold,slideWithNav)">
+				  <ion-slide *ngFor="let s of sliderGold.slidesItems">
+					<ion-img src="../../assets/images/{{s.image}}"></ion-img>
+				  </ion-slide>
+		  </ion-slides>
+		</ion-card>
    </ion-list>
+
+    <ion-list lines="none">
+      <ion-list-header>
+		  <ion-button shape="round" color="medium"> 
+			<ion-label><b>Silver Sponsors</b></ion-label>
+		  </ion-button> 
+      </ion-list-header>
+
+		<ion-card class="sponsor-card">
+		   <ion-slides pager="true" [options]="slideOptsSilver" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderSilver,slideWithNav)">
+				  <ion-slide *ngFor="let s of sliderSilver.slidesItems">
+					<ion-img src="../../assets/images/{{s.image}}"></ion-img>
+				  </ion-slide>
+		  </ion-slides>
+		</ion-card>
+   </ion-list>
+
+    <ion-list lines="none">
+      <ion-list-header>
+		  <ion-button shape="round" color="warning"> 
+			<ion-label><b>Bronze Sponsors</b></ion-label>
+		  </ion-button> 
+      </ion-list-header>
+
+		<ion-card class="sponsor-card">
+		   <ion-slides pager="true" [options]="slideOptsBronze" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderBronze,slideWithNav)">
+				  <ion-slide *ngFor="let s of sliderBronze.slidesItems">
+					<ion-img src="../../assets/images/{{s.image}}"></ion-img>
+				  </ion-slide>
+		  </ion-slides>
+		</ion-card>
+   </ion-list>   
+   
 </ion-content>

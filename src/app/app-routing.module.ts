@@ -20,10 +20,6 @@ const routes: Routes = [
   { path: 'message', loadChildren: './message/message.module#MessagePageModule' },
   { path: 'commitee', loadChildren: './commitee/commitee.module#CommiteePageModule' },
   { path: 'mission', loadChildren: './mission/mission.module#MissionPageModule' },
-  { path: 'member', loadChildren: './member/member.module#MemberPageModule' },
-  { path: 'sponsor', loadChildren: './sponsor/sponsor.module#SponsorPageModule' },
-  { path: 'memberpay', loadChildren: './memberpay/memberpay.module#MemberpayPageModule' },
-  { path: 'sponsorpay', loadChildren: './sponsorpay/sponsorpay.module#SponsorpayPageModule' },
   { path: 'cremhelpline', loadChildren: './cremhelpline/cremhelpline.module#CremhelplinePageModule' },
   { path: 'famhelpline', loadChildren: './famhelpline/famhelpline.module#FamhelplinePageModule' },
   { path: 'contactus', loadChildren: './contactus/contactus.module#ContactusPageModule' }

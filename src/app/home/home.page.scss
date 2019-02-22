@@ -1,6 +1,33 @@
 .welcome-card ion-img {
   max-height: 35vh;
   overflow: hidden;
+  //background-image: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+}
+
+ion-toolbar {
+    background-image: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%); 
+ }
+
+.event-card ion-img{
+        margin: 10px auto;
+        //height: 20vh !important;
+        width: auto !important;
+        max-width: 85%;
+        align-items: center;
+		overflow: hidden;
+  //background-image:  linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+}
+
+.btn-card {
+  text-align: center;
+  overflow: hidden;
+  //background-image:  linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(241,231,103,1) 100%);
+   background-image:  linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+}
+
+.sponsor-card ion-img {
+  max-height: 10vh;
+  overflow: hidden;
   background-image: linear-gradient(-90deg, red, yellow);
 }
 
@@ -16,9 +43,26 @@
   	height: 70px;
 }
 
-ion-button {
-	background-color: goldenrod;
+.hometitle {
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+  	width: 498px;
+  	height: 60px;
 }
+
+.manabadi ion-img{
+        margin: 10px auto;
+        height: 15vh !important;
+        width: auto !important;
+        max-width: 85%;
+        align-items: center;
+}
+
+ion-content {
+    background-color: #fff;	
+}
+
 
 ion-icon {
     &.cats-logo {
@@ -34,47 +78,50 @@ slide-img ion-img {
 }
 
 
+.event-header {
+  background-color: var(--ion-color-dark);
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+}
 
-.round-button {
-      width: 100px;
-      height: 100px;
+.event-header img {
+  max-width: 200px;
+  padding: 25px 5px 20px 0;
+}
+
+.event-info p {
+  color: var(--ion-color-medium);
+  text-align: left;
+}
+
+.event-info ion-icon {
+  color: var(--ion-color-primary);
+}
+
+.ios .event-info {
+  text-align: center;
+}
+
+.roundbutton{
+		  color: white;
+		  padding: 28px;
+          display: inline-block;
+		  font-size: 15px;
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          border: 1px solid #fff;
+		  box-shadow: 0 0 5px gray;
+		  margin: 1px 0.5px;	
+		  text-align: center;
+		  justify-content: center;
+		  display: flex;
+		  align-items: center;
+          text-decoration: none;
+          font-weight: bold;
+		  background-image: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 65%, rgba(246,41,12,1) 87%, rgba(240,47,23,1) 96%, rgba(231,56,39,1) 100%);
+			
+}
 
 
-}
-.round-button-circle {
-		width: 130%;
-		height: 130%;
-		left: -15%;
-		top: -15%;
-		font-size: 33px;
-		padding-top: 38px;
-		-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-		-o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-		-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-		box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-		z-index: 2;
-		border-size: 10px;
-		-webkit-transform: rotate(-360deg);
-		-moz-transform: rotate(-360deg);
-		-o-transform: rotate(-360deg);
-		transform: rotate(-360deg);
-}
-.round-button-circle:hover {
-	background:#30588e;
-}
-.round-button a {
-    display:block;
-	float:left;
-	width:100%;
-	padding-top:50%;
-    padding-bottom:50%;
-	line-height:1em;
-	margin-top:-0.5em;
-    
-	text-align:center;
-	color:#e2eaf3;
-    font-family:Verdana;
-    font-size:1.2em;
-    font-weight:bold;
-    text-decoration:none;
-}
