@@ -1,6 +1,33 @@
 .welcome-card ion-img {
   max-height: 35vh;
   overflow: hidden;
+  //background-image: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+}
+
+ion-toolbar {
+    background-image: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%); 
+ }
+
+.event-card ion-img{
+        margin: 10px auto;
+        //height: 20vh !important;
+        width: auto !important;
+        max-width: 85%;
+        align-items: center;
+		overflow: hidden;
+  //background-image:  linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+}
+
+.btn-card {
+  text-align: center;
+  overflow: hidden;
+  //background-image:  linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(241,231,103,1) 100%);
+   background-image:  linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+}
+
+.sponsor-card ion-img {
+  max-height: 10vh;
+  overflow: hidden;
   background-image: linear-gradient(-90deg, red, yellow);
 }
 
@@ -16,9 +43,26 @@
   	height: 70px;
 }
 
-ion-button {
-	background-color: goldenrod;
+.hometitle {
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+  	width: 498px;
+  	height: 60px;
 }
+
+.manabadi ion-img{
+        margin: 10px auto;
+        height: 15vh !important;
+        width: auto !important;
+        max-width: 85%;
+        align-items: center;
+}
+
+ion-content {
+    background-color: #fff;	
+}
+
 
 ion-icon {
     &.cats-logo {
@@ -34,119 +78,50 @@ slide-img ion-img {
 }
 
 
-
-/* Slider */
-.slick-slide {
-    margin: 0px 20px;
+.event-header {
+  background-color: var(--ion-color-dark);
+  padding: 16px;
+  width: 100%;
+  text-align: center;
 }
 
-.slick-slide img {
-    width: 100%;
+.event-header img {
+  max-width: 200px;
+  padding: 25px 5px 20px 0;
 }
 
-.slick-slider
-{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+.event-info p {
+  color: var(--ion-color-medium);
+  text-align: left;
 }
 
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
+.event-info ion-icon {
+  color: var(--ion-color-primary);
 }
 
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+.ios .event-info {
+  text-align: center;
 }
 
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
+.roundbutton{
+		  color: white;
+		  padding: 28px;
+          display: inline-block;
+		  font-size: 15px;
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          border: 1px solid #fff;
+		  box-shadow: 0 0 5px gray;
+		  margin: 1px 0.5px;	
+		  text-align: center;
+		  justify-content: center;
+		  display: flex;
+		  align-items: center;
+          text-decoration: none;
+          font-weight: bold;
+		  background-image: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 65%, rgba(246,41,12,1) 87%, rgba(240,47,23,1) 96%, rgba(231,56,39,1) 100%);
+			
 }
 
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
+
