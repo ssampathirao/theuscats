@@ -41,6 +41,11 @@ export class AppComponent {
       icon: 'list'
     },
     {
+      title: 'Gallery',
+      url: '/gallery',
+      icon: 'list'
+    },	
+    {
       title: 'Family HelpLine',
       url: '/famhelpline',
       icon: 'list'

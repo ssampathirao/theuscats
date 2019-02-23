@@ -22,7 +22,8 @@ const routes: Routes = [
   { path: 'mission', loadChildren: './mission/mission.module#MissionPageModule' },
   { path: 'cremhelpline', loadChildren: './cremhelpline/cremhelpline.module#CremhelplinePageModule' },
   { path: 'famhelpline', loadChildren: './famhelpline/famhelpline.module#FamhelplinePageModule' },
-  { path: 'contactus', loadChildren: './contactus/contactus.module#ContactusPageModule' }
+  { path: 'contactus', loadChildren: './contactus/contactus.module#ContactusPageModule' },
+  { path: 'gallery', loadChildren: './gallery/gallery.module#GalleryPageModule' }
 ];
 
 @NgModule({
