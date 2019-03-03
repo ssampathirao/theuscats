@@ -1,55 +1,66 @@
-.welcome-card ion-img {
-  max-height: 35vh;
+.welcome-card ion-img{
+  //max-height: 35vh;
   overflow: hidden;
+  margin: auto;
+    background-size: cover;
+    //background-position-x: 50%;
+    //background-position-y: 50%;
+    width: 100%;
+    //padding-bottom: 75%;  
   //background-image: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
 }
 
-ion-toolbar {
-    background-image: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%); 
+.home ion-toolbar {
+	height: 225px;
+	--background: url('../../assets/banner.png') center 0/100% 100% no-repeat; 
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
  }
+ 
+ion-button {
+  text-transform: none;
+}
 
-.event-card ion-img{
-        margin: 10px auto;
-        //height: 20vh !important;
-        width: auto !important;
-        max-width: 85%;
+.member {
+	width: 100%;
+	text-transform: none;
+}
+
+.event-card {
+        max-width: 100%;
         align-items: center;
 		overflow: hidden;
   //background-image:  linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
 }
 
-.btn-card {
-  text-align: center;
+.event-card ion-img{
+  max-height: 200vh;
   overflow: hidden;
-  //background-image:  linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(241,231,103,1) 100%);
-   background-image:  linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+  align-items: center;
+  width: auto;
+  margin: auto;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 
 .sponsor-card ion-img {
-  max-height: 10vh;
+  //max-height: 15vh;
   overflow: hidden;
-  background-image: linear-gradient(-90deg, red, yellow);
+  align-items: center;
+  width: auto;
+  margin: auto;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  //background-image: linear-gradient(-90deg, red, yellow);
 }
 
-.homecontent {
-  background-image: linear-gradient(-90deg, red, yellow);
-}
-
-.homelogo {
-	background-position: left;
-	background-repeat: no-repeat;
-	background-size: contain;
-  	width: 70px;
-  	height: 70px;
-}
-
-.hometitle {
-	background-position: left;
-	background-repeat: no-repeat;
-	background-size: contain;
-  	width: 498px;
-  	height: 60px;
-}
 
 .manabadi ion-img{
         margin: 10px auto;
@@ -64,64 +75,11 @@ ion-content {
 }
 
 
-ion-icon {
-    &.cats-logo {
-      width: 50px;
-      height: 50px;
-    }
-}
-
 slide-img ion-img {
     max-width: 10;
     max-height: 10;
     overflow: hidden;
 }
 
-
-.event-header {
-  background-color: var(--ion-color-dark);
-  padding: 16px;
-  width: 100%;
-  text-align: center;
-}
-
-.event-header img {
-  max-width: 200px;
-  padding: 25px 5px 20px 0;
-}
-
-.event-info p {
-  color: var(--ion-color-medium);
-  text-align: left;
-}
-
-.event-info ion-icon {
-  color: var(--ion-color-primary);
-}
-
-.ios .event-info {
-  text-align: center;
-}
-
-.roundbutton{
-		  color: white;
-		  padding: 28px;
-          display: inline-block;
-		  font-size: 15px;
-          height: 100px;
-          width: 100px;
-          border-radius: 50%;
-          border: 1px solid #fff;
-		  box-shadow: 0 0 5px gray;
-		  margin: 1px 0.5px;	
-		  text-align: center;
-		  justify-content: center;
-		  display: flex;
-		  align-items: center;
-          text-decoration: none;
-          font-weight: bold;
-		  background-image: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 65%, rgba(246,41,12,1) 87%, rgba(240,47,23,1) 96%, rgba(231,56,39,1) 100%);
-			
-}
 
 
