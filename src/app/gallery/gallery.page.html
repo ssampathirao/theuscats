@@ -1,9 +1,57 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>gallery</ion-title>
+  <ion-toolbar color='warning'>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-grid>		
+		<ion-row>
+ 			<ion-col align-self-start>
+				<ion-img src="assets/catslogo.png" class="homelogo"></ion-img>
+			</ion-col> 
+ 			<ion-col align-self-center>
+				    <ion-title>CATS Event Gallery</ion-title>
+			</ion-col>
+ 			<ion-col>
+				
+			</ion-col>			
+		</ion-row>
+    </ion-grid>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+    <div width="100%" height="4" colspan="3" style="color: #FFFFFF;background-color: #890208; text-align:center;">
+        <b> <span>Event: Dasserah-Diwali 2019 	Location:TJ High Scoll, Alexandria VA	Date: Nov 2019</span></b>
+    </div>
+    <ion-card class="gallery-card">
+  	    <ion-slides pager="true" [options]="slideOptsGal" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderGal,slideWithNav)">
+			<ion-slide *ngFor="let s of sliderGal.slidesItems">
+				<ion-img src="../../assets/images/{{s.image}}"></ion-img>
+			</ion-slide>
+	    </ion-slides> 		
+    </ion-card>
+	
+    <div width="100%" height="4" colspan="3" style="color: #FFFFFF;background-color: #890208; text-align:center;">
+        <b> <span>Event: DC Kitchen 2019 	Location:DC		Date: Jun 2019</span></b>
+    </div>
+    <ion-card class="gallery-card">
+  	    <ion-slides pager="true" [options]="slideOptsGal" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderGal,slideWithNav)">
+			<ion-slide *ngFor="let s of sliderGal.slidesItems">
+				<ion-img src="../../assets/images/{{s.image}}"></ion-img>
+			</ion-slide>
+	    </ion-slides> 		
+    </ion-card>
 
+    <div width="100%" height="4" colspan="3" style="color: #FFFFFF;background-color: #890208; text-align:center;">
+        <b> <span>Event: Dasserah-Diwali 2019 	Location:TJ High Scoll, Alexandria VA	Date: Nov 2019</span></b>
+    </div>
+    <ion-card class="gallery-card">
+  	    <ion-slides pager="true" [options]="slideOptsGal" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderGal,slideWithNav)">
+			<ion-slide *ngFor="let s of sliderGal.slidesItems">
+				<ion-img src="../../assets/images/{{s.image}}"></ion-img>
+			</ion-slide>
+	    </ion-slides> 		
+    </ion-card>	
 </ion-content>
