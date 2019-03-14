@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild, Slides } from '@angular/core';
-//import { Slides } from '@ionic/angular';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-gallery',
@@ -8,22 +8,23 @@ import { Component, OnInit, ViewChild, Slides } from '@angular/core';
 })
 export class GalleryPage implements OnInit {
 
-@ViewChild('slideWithNav') slideWithNav: Slides;
-images = ['../../assets/img/gold/image1.jpg', '../../assets/img/gold/image2.jpg', '../../assets/img/gold/image3.jpg', '../../assets/img/gold/image4.jpg'];
-sliderGal: any;
+  @ViewChild('slideWithNav') slideWithNav: IonSlides;
+  images = ['../../assets/img/gold/image1.jpg', '../../assets/img/gold/image2.jpg',
+  '../../assets/img/gold/image3.jpg', '../../assets/img/gold/image4.jpg'];
+  sliderGal: any;
 
-slideOptsGal = {
+  slideOptsGal = {
     initialSlide: 0,
-    slidesPerView: 7,
-    autoplay:true,
-	spaceBetween: 15,
-	centeredSlides:true	
-  }; 
+    slidesPerView: 1,
+    autoplay: true,
+    spaceBetween: 0,
+    centeredSlides: true
+  };
 
-  constructor() { 
-  
+  constructor() {
+
     this.sliderGal =
-    {
+      {
         isBeginningSlide: true,
         isEndSlide: false,
         slidesItems: [
@@ -50,7 +51,7 @@ slideOptsGal = {
           {
             id: 6,
             image: '../../assets/img/gold/image6.png'
-          },	
+          },
           {
             id: 7,
             image: '../../assets/img/gold/image7.jpg'
@@ -70,10 +71,10 @@ slideOptsGal = {
           {
             id: 11,
             image: '../../assets/img/gold/image11.jpg'
-          }		  
+          }
         ]
-    };  
-  
+      };
+
   }
 
   //Move to Next slide
@@ -82,25 +83,25 @@ slideOptsGal = {
       this.checkIfNavDisabled(object, slideView);
     });
   }
- 
+
   //Move to previous slide
   slidePrev(object, slideView) {
     slideView.slidePrev(500).then(() => {
       this.checkIfNavDisabled(object, slideView);
     });;
   }
- 
+
   //Method called when slide is changed by drag or navigation
   SlideDidChange(object, slideView) {
     this.checkIfNavDisabled(object, slideView);
   }
- 
+
   //Call methods to check if slide is first or last to enable disbale navigation  
   checkIfNavDisabled(object, slideView) {
     this.checkisBeginning(object, slideView);
     this.checkisEnd(object, slideView);
   }
- 
+
   checkisBeginning(object, slideView) {
     slideView.isBeginning().then((istrue) => {
       object.isBeginningSlide = istrue;
@@ -110,7 +111,7 @@ slideOptsGal = {
     slideView.isEnd().then((istrue) => {
       object.isEndSlide = istrue;
     });
-  }	
+  }
 
   ngOnInit() {
   }

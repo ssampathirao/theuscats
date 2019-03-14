@@ -10,6 +10,19 @@
   //background-image: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
 }
 
+ion-card{
+  ion-button{
+    p{
+      padding-top: 16px;
+      padding-left: 5px;
+    }
+  }
+}
+
+ion-toolbar{
+  height: 100px !important;
+}
+
 .home ion-toolbar {
 	height: 225px;
 	--background: url('../../assets/banner.png') center 0/100% 100% no-repeat; 
@@ -21,6 +34,11 @@
 	background-position:center;
  }
  
+ion-slide{
+  width: 100% !important;
+  height: auto;
+}
+
 ion-button {
   text-transform: none;
 }
@@ -81,5 +99,8 @@ slide-img ion-img {
     overflow: hidden;
 }
 
-
-
+@media only screen and (min-width: 450px) {
+  ion-toolbar {
+    height: 200px !important;
+  }
+}
