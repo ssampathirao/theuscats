@@ -1,5 +1,5 @@
-import { Component, ViewChild, Slides} from '@angular/core';
-//import { Slides } from '@ionic/angular';
+import { Component, ViewChild} from '@angular/core';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +7,9 @@ import { Component, ViewChild, Slides} from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 
-export class HomePage
-{
+export class HomePage {
 
-@ViewChild('slideWithNav') slideWithNav: Slides;
-
+@ViewChild('slideWithNav') slideWithNav: IonSlides;
 
 sliderHome: any;
 sliderGold: any;
@@ -26,37 +24,38 @@ slideOptsHome = {
   };
   
 slideOptsGold = {
-    initialSlide: 0,
-    slidesPerView: 7,
-    autoplay:true,
-	spaceBetween: 15,
-	centeredSlides:true	
+  initialSlide: 0,
+  slidesPerView: 1,
+  autoplay: true,
+  spaceBetween: 0,
+  centeredSlides: true
   }; 
 
 slideOptsSilver = {
-    initialSlide: 0,
-    slidesPerView: 7,
-    autoplay:true,
-	spaceBetween: 15	
+  initialSlide: 0,
+  slidesPerView: 1,
+  autoplay: true,
+  spaceBetween: 0,
+  centeredSlides: true	
   };
   
 slideOptsBronze = {
-    initialSlide: 0,
-    slidesPerView: 7,
-    autoplay:true,
-	spaceBetween: 15	
+  initialSlide: 0,
+  slidesPerView: 1,
+  autoplay: true,
+  spaceBetween: 5,
+  centeredSlides: true	
   }; 
 
 slideOptsGal = {
-    initialSlide: 0,
-    slidesPerView: 7,
-    autoplay:true,
-	spaceBetween: 15,
-	centeredSlides:true	
+  initialSlide: 0,
+  slidesPerView: 1,
+  autoplay: true,
+  spaceBetween: 0,
+  centeredSlides: true
   };  
 
 constructor() {
-
     this.sliderHome =
       {
         isBeginningSlide: true,
@@ -76,7 +75,7 @@ constructor() {
           }
         ]
       };
-	  
+
     this.sliderSilver =
       {
         isBeginningSlide: true,
@@ -97,7 +96,7 @@ constructor() {
           {
             id: 4,
             image: '../../assets/img/silver/image4.jpg'
-          }		  
+          }
         ]
       };
 
